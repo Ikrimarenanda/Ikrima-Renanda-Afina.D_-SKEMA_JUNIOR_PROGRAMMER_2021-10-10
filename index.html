@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <!-- menyambungkan file html dengan file CSS -->
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <!-- Tambahkan tag <div> dengan class “wrapper”. -->
+        <div class ="wrapper">
+        <!-- Tambahkan tag <div> dengan class “main” dengan didalamnya ada <div> dengan class "display". -->
+        <div class ="main">
+            <div class="display">
+                <p id="output">0</p>
+
+            </div>
+            <!-- Tambahkan 5 tag <div> dengan class first-row sampai fifth-row -->
+                <!--tambahkan tag <button> dengan Id yang harus mengikuti format: “row_no-button_no”.-->
+            <div class="first-row">
+                <button id="r1-1" onclick="clearOutput()" style="width: 138px;">AC</button>
+                <button id="r1-2" onclick="perc()">%</button>
+                <button id="r1-3" onclick="fordisplay('/')">/</button>
+            </div>
+            <div class="second-row">
+                <button id="r2-1" onclick="fordisplay('7')">7</button>
+                <button id="r2-2" onclick="fordisplay('8')">8</button>
+                <button id="r2-3" onclick="fordisplay('9')">9</button>
+                <button id="r2-4" onclick="fordisplay('*')">X</button>
+            </div>
+             <div class="third-row">
+                <button id="r3-1" onclick="fordisplay('4')">4</button>
+                <button id="r3-2" onclick="fordisplay('5')">5</button>
+                <button id="r3-3" onclick="fordisplay('6')">6</button>
+                <button id="r3-4" onclick="fordisplay('-')">-</button>
+            </div>
+            <div class="fourth-row">
+                <button id="r4-1" onclick="fordisplay('1')">1</button>
+                <button id="r4-2" onclick="fordisplay('2')">2</button>
+                <button id="r4-3" onclick="fordisplay('3')">3</button>
+                <button id="r4-4" onclick="fordisplay('+')">+</button>
+            </div>
+            <div class="fifth-row">
+               <button id="r5-1" style="width: 138px;" onclick="fordisplay('0')">0</button>
+               <button id="r5-2" onclick="fordisplay('.')">.</button>
+               <button id="r5-3" onclick="solve()">=</button>
+            </div>
+        </div>
+
+    </div>
+        <!-- menyambungkan File HTML dengan File JavaScript -->
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
